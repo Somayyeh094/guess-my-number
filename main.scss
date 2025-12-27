@@ -1,0 +1,98 @@
+* {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%; //1rem=10px 10/16px
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", sans-serif;
+  color: #fff;
+  background-color: #222;
+  /* background-color: #60b347; */
+}
+
+.game-description {
+  padding: 2rem 1rem;
+  font-size: 1.5rem;
+  height: 35vh;
+  position: relative;
+  border-bottom: 7px solid #eee;
+  &__start-again {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h1 {
+    text-align: center;
+    font-size: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .secret-number {
+    background-color: #fff;
+    width: 15rem;
+    text-align: center;
+    color: #222;
+    padding: 3rem 0;
+    font-size: 6rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+}
+
+.btn {
+  font-family: inherit;
+  border: none;
+  padding: 2rem 3rem;
+  font-size: 2rem;
+  cursor: pointer;
+  &:hover {
+    background-color: #ccc;
+  }
+}
+.guess {
+  height: 65vh;
+  padding: 15rem 1rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  &__form {
+    justify-self: center;
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    input {
+      display: block;
+      width: 30rem;
+      background-color: transparent;
+      border: 4px solid #fff;
+      color: inherit;
+      font-family: inherit;
+      margin-bottom: 3rem;
+      padding: 3rem 1.5rem;
+    }
+  }
+  ::placeholder {
+    color: inherit;
+  }
+  .scoring {
+    &__message {
+      margin-bottom: 8rem;
+      font-size: 2rem;
+    }
+    &__label {
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+  }
+}

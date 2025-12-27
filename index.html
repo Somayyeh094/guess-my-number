@@ -3,37 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <title>Guess My Number!</title>
   </head>
   <body>
-    <main class="grid">
-      <section class="grid__item game-description">
-        <div class="game-description__start-again">
-          <button class="btn again">Again!</button>
-          <p>(Between 1-20)</p>
-        </div>
-        <h1>Guess My Number!</h1>
-      </section>
-      <section class="grid__item secret-number">?</section>
-      <section class="grid__item guess">
-        <form class="guess__form">
-          <input
-            type="number"
-            min="1"
-            max="20"
-            required
-            placeholder="enter a number between 1-20"
-          />
-          <button class="btn check">Check!</button>
-        </form>
-        <div class="guess__scoring">
-          <h2 class="scoring__status">Start guessing...</h2>
-          <p>💯 Score: <span class="scoring__score">0</span></p>
-          <p>🥇 High score: <span class="scoring__highScore">0</span></p>
-        </div>
-      </section>
+    <header class="game-description">
+      <div class="game-description__start-again">
+        <button class="btn again">Again!</button>
+        <p>(Between 1-20)</p>
+      </div>
+      <h1>Guess My Number!</h1>
+      <div class="secret-number">?</div>
+    </header>
+    <main class="guess">
+      <form class="guess__form">
+        <input
+          type="number"
+          min="1"
+          max="20"
+          required
+          placeholder="Enter between 1-20"
+        />
+        <button class="btn check">Check!</button>
+      </form>
+      <div class="guess__scoring">
+        <h2 class="scoring__message">Start guessing...</h2>
+        <p class="scoring__label">
+          💯 Score: <span class="scoring__score">20</span>
+        </p>
+        <p class="scoring__label">
+          🥇 High score: <span class="scoring__highScore">0</span>
+        </p>
+      </div>
     </main>
   </body>
 </html>
