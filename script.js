@@ -20,7 +20,7 @@ checkBtn.addEventListener("click", function (e) {
     if (score > highScore) highScoreHTML.textContent = score;
   } else {
     scoringMessage.textContent =
-      numberInput > randomNumber ? "Too high" : "Too low";
+      numberInput > randomNumber ? "⬆️ Too high" : "⬇️ Too low";
     if (score > 1) {
       score--;
       scoreHTML.textContent = score;
