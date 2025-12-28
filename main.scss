@@ -40,9 +40,7 @@ body {
   height: 35vh;
   position: relative;
   border-bottom: 7px solid #eee;
-  @include respond(phone) {
-    height: auto;
-  }
+ 
   @media only screen and (orientation: landscape) {
     height: 50vh;
   }
