@@ -3,13 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="number-96.png" />
+    <meta property="og:title" content="Guess my number!😉" />
+    <meta
+      property="og:description"
+      content="You have to guess a secret number between 1-20.You have 15 chances to win the game. Are you ready? Let's go!🤩"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
-    <title>Guess My Number!</title>
+    <title>Guess My Number! 😉</title>
   </head>
   <body>
     <header class="game-description">
@@ -24,6 +30,7 @@
       <form class="guess__form">
         <input
           type="number"
+          class="number-input"
           min="1"
           max="20"
           required
@@ -34,12 +41,13 @@
       <div class="guess__scoring">
         <h2 class="scoring__message">Start guessing...</h2>
         <p class="scoring__label">
-          💯 Score: <span class="scoring__score">20</span>
+          💯 Score: <span class="scoring__score">15</span>
         </p>
         <p class="scoring__label">
           🥇 High score: <span class="scoring__highScore">0</span>
         </p>
       </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
