@@ -40,6 +40,10 @@ body {
   height: 35vh;
   position: relative;
   border-bottom: 7px solid #eee;
+  @media only screen and (orientation: landscape) {
+    height: 50vh;
+  }
+
   &__start-again {
     display: flex;
     justify-content: space-between;
@@ -55,6 +59,9 @@ body {
     transform: translate(-50%, -50%);
     @include respond(phone) {
       font-size: 2.5rem;
+    }
+    @media only screen and (orientation: landscape) {
+      font-size: 3rem;
     }
   }
   .secret-number {
@@ -82,12 +89,15 @@ body {
   }
 }
 .guess {
-  height: 65vh;
+  height: 60vh;
   padding: 15rem 1rem 2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   @include respond(tablet-port) {
     grid-template-columns: 1fr;
+  }
+  @media only screen and (orientation: landscape) {
+    height: auto;
   }
   &__form {
     justify-self: center;
@@ -96,6 +106,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media only screen and (orientation: landscape) {
+      margin-bottom: 6rem;
+    }
     .number-input {
       display: block;
       width: 30rem;
@@ -129,6 +142,9 @@ body {
         margin-bottom: 4rem;
         font-size: 1.5rem;
       }
+      @media only screen and (orientation: landscape) {
+        margin-bottom: 4rem;
+      }
     }
     &__label {
       font-size: 2rem;
@@ -140,6 +156,11 @@ body {
   }
 }
 footer {
+  height: 5vh;
   text-align: center;
   font-size: 1rem;
+  @media only screen and (orientation: landscape) {
+    height: auto;
+    margin-bottom: 1rem;
+  }
 }

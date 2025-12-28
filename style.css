@@ -28,6 +28,11 @@ body {
   position: relative;
   border-bottom: 7px solid #eee;
 }
+@media only screen and (orientation: landscape) {
+  .game-description {
+    height: 50vh;
+  }
+}
 .game-description__start-again {
   display: flex;
   justify-content: space-between;
@@ -45,6 +50,11 @@ body {
 @media only screen and (max-width: 37.5em) {
   .game-description h1 {
     font-size: 2.5rem;
+  }
+}
+@media only screen and (orientation: landscape) {
+  .game-description h1 {
+    font-size: 3rem;
   }
 }
 .game-description .secret-number {
@@ -72,7 +82,7 @@ body {
 }
 
 .guess {
-  height: 65vh;
+  height: 60vh;
   padding: 15rem 1rem 2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -82,6 +92,11 @@ body {
     grid-template-columns: 1fr;
   }
 }
+@media only screen and (orientation: landscape) {
+  .guess {
+    height: auto;
+  }
+}
 .guess__form {
   justify-self: center;
   align-self: start;
@@ -89,6 +104,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (orientation: landscape) {
+  .guess__form {
+    margin-bottom: 6rem;
+  }
 }
 .guess__form .number-input {
   display: block;
@@ -128,6 +148,11 @@ body {
     font-size: 1.5rem;
   }
 }
+@media only screen and (orientation: landscape) {
+  .guess .scoring__message {
+    margin-bottom: 4rem;
+  }
+}
 .guess .scoring__label {
   font-size: 2rem;
   margin-bottom: 2rem;
@@ -139,8 +164,15 @@ body {
 }
 
 footer {
+  height: 5vh;
   text-align: center;
   font-size: 1rem;
+}
+@media only screen and (orientation: landscape) {
+  footer {
+    height: auto;
+    margin-bottom: 1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
