@@ -92,6 +92,11 @@ body {
     grid-template-columns: 1fr;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .guess {
+    height: auto;
+  }
+}
 @media only screen and (orientation: landscape) {
   .guess {
     height: auto;
@@ -167,6 +172,11 @@ footer {
   height: 5vh;
   text-align: center;
   font-size: 1rem;
+}
+@media only screen and (max-width: 37.5em) {
+  footer {
+    height: auto;
+  }
 }
 @media only screen and (orientation: landscape) {
   footer {
