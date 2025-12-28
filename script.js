@@ -6,8 +6,10 @@ const scoreHTML = document.querySelector(".scoring__score");
 const highScoreHTML = document.querySelector(".scoring__highScore");
 const checkBtn = document.querySelector(".check");
 const againBtn = document.querySelector(".again");
-// const win = new Audio("audio/win.mp3").preload;
-// const fail = new Audio("audio/fail.mp3").preload;
+const win = new Audio("audio/win.mp3");
+const fail = new Audio("audio/fail.mp3");
+win.preload = "auto";
+fail.preload = "auto";
 let score = 15;
 let highScore = 0;
 
@@ -23,7 +25,7 @@ checkBtn.addEventListener("click", function (e) {
       alert("Please enter a number between 1-20! 🫤");
     } else if (numberInput === randomNumber) {
       //check if the number equals to the random number
-      new Audio("audio/win.mp3").play();
+      win.play();
       document.querySelector("body").style.backgroundColor = "#60b347";
       secretNumber.style.width = "30rem";
       secretNumber.textContent = numberInput;
@@ -40,7 +42,7 @@ checkBtn.addEventListener("click", function (e) {
         score--;
         scoreHTML.textContent = score;
       } else {
-        new Audio("audio/fail.mp3").play();
+        fail.play();
         score = 0;
         scoreHTML.textContent = score;
         scoringMessage.textContent = "You lost the game!😎😎😎";
