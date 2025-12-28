@@ -12,7 +12,7 @@ checkBtn.addEventListener("click", function (e) {
   e.preventDefault();
   const numberInput = +document.querySelector(".number-input").value;
   if (numberInput < 1 || numberInput > 20) {
-    alert("Please enter a number between 1-20");
+    alert("Please enter a number between 1-20!");
   }
 
   if (numberInput === randomNumber) {
